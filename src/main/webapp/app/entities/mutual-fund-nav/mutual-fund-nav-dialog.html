@@ -1,0 +1,80 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myMutualFundNavLabel" data-translate="sampleApplicationApp.mutualFundNav.home.createOrEditLabel">Create or edit a Mutual Fund Nav</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.mutualFundNav.id">
+            <label for="id" data-translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.mutualFundNav.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.schemeCode" for="field_schemeCode">Scheme Code</label>
+            <input type="text" class="form-control" name="schemeCode" id="field_schemeCode"
+                    ng-model="vm.mutualFundNav.schemeCode"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.isinDivPayoutIsinGrowth" for="field_isinDivPayoutIsinGrowth">Isin Div Payout Isin Growth</label>
+            <input type="text" class="form-control" name="isinDivPayoutIsinGrowth" id="field_isinDivPayoutIsinGrowth"
+                    ng-model="vm.mutualFundNav.isinDivPayoutIsinGrowth"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.status" for="field_status">Status</label>
+            <input type="text" class="form-control" name="status" id="field_status"
+                    ng-model="vm.mutualFundNav.status"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.schemeName" for="field_schemeName">Scheme Name</label>
+            <input type="text" class="form-control" name="schemeName" id="field_schemeName"
+                    ng-model="vm.mutualFundNav.schemeName"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.netAssetValue" for="field_netAssetValue">Net Asset Value</label>
+            <input type="text" class="form-control" name="netAssetValue" id="field_netAssetValue"
+                    ng-model="vm.mutualFundNav.netAssetValue"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.repurchasePrice" for="field_repurchasePrice">Repurchase Price</label>
+            <input type="text" class="form-control" name="repurchasePrice" id="field_repurchasePrice"
+                    ng-model="vm.mutualFundNav.repurchasePrice"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.salePrice" for="field_salePrice">Sale Price</label>
+            <input type="text" class="form-control" name="salePrice" id="field_salePrice"
+                    ng-model="vm.mutualFundNav.salePrice"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.date" for="field_date">Date</label>
+            <input type="text" class="form-control" name="date" id="field_date"
+                    ng-model="vm.mutualFundNav.date"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="sampleApplicationApp.mutualFundNav.updatedDate" for="field_updatedDate">Updated Date</label>
+            <input type="text" class="form-control" name="updatedDate" id="field_updatedDate"
+                    ng-model="vm.mutualFundNav.updatedDate"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span data-translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span data-translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

@@ -1,0 +1,72 @@
+<div>
+    <h2 data-translate="sampleApplicationApp.mutualFundNav.home.title">Mutual Fund Navs</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="mutual-fund-nav.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="sampleApplicationApp.mutualFundNav.home.createLabel">
+                        Create new Mutual Fund Nav
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.schemeCode">Scheme Code</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.isinDivPayoutIsinGrowth">Isin Div Payout Isin Growth</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.status">Status</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.schemeName">Scheme Name</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.netAssetValue">Net Asset Value</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.repurchasePrice">Repurchase Price</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.salePrice">Sale Price</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.date">Date</span></th>
+                    <th><span data-translate="sampleApplicationApp.mutualFundNav.updatedDate">Updated Date</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="mutualFundNav in vm.mutualFundNavs track by mutualFundNav.id">
+                    <td><a ui-sref="mutual-fund-nav-detail({id:mutualFundNav.id})">{{mutualFundNav.id}}</a></td>
+                    <td>{{mutualFundNav.schemeCode}}</td>
+                    <td>{{mutualFundNav.isinDivPayoutIsinGrowth}}</td>
+                    <td>{{mutualFundNav.status}}</td>
+                    <td>{{mutualFundNav.schemeName}}</td>
+                    <td>{{mutualFundNav.netAssetValue}}</td>
+                    <td>{{mutualFundNav.repurchasePrice}}</td>
+                    <td>{{mutualFundNav.salePrice}}</td>
+                    <td>{{mutualFundNav.date}}</td>
+                    <td>{{mutualFundNav.updatedDate}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="mutual-fund-nav-detail({id:mutualFundNav.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="mutual-fund-nav.edit({id:mutualFundNav.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="mutual-fund-nav.delete({id:mutualFundNav.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-xs hidden-sm" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

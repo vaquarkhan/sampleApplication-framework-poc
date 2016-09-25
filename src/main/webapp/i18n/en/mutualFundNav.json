@@ -1,0 +1,30 @@
+{
+    "sampleApplicationApp": {
+        "mutualFundNav" : {
+            "home": {
+                "title": "Mutual Fund Navs",
+                "createLabel": "Create a new Mutual Fund Nav",
+                "createOrEditLabel": "Create or edit a Mutual Fund Nav",
+                "search": "Search for Mutual Fund Nav"
+            },
+            "created": "A new Mutual Fund Nav is created with identifier {{ param }}",
+            "updated": "A Mutual Fund Nav is updated with identifier {{ param }}",
+            "deleted": "A Mutual Fund Nav is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Mutual Fund Nav {{ id }}?"
+            },
+            "detail": {
+                "title": "Mutual Fund Nav"
+            },
+            "schemeCode": "Scheme Code",
+            "isinDivPayoutIsinGrowth": "Isin Div Payout Isin Growth",
+            "status": "Status",
+            "schemeName": "Scheme Name",
+            "netAssetValue": "Net Asset Value",
+            "repurchasePrice": "Repurchase Price",
+            "salePrice": "Sale Price",
+            "date": "Date",
+            "updatedDate": "Updated Date"
+        }
+    }
+}

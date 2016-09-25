@@ -1,0 +1,47 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "schemeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isinDivPayoutIsinGrowth",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "schemeName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "netAssetValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "repurchasePrice",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "salePrice",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "updatedDate",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160925070359",
+    "entityTableName": "mutual_fund_nav",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no"
+}

@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span data-translate="sampleApplicationApp.mutualFundNav.detail.title">Mutual Fund Nav</span> {{vm.mutualFundNav.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.schemeCode">Scheme Code</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.schemeCode}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.isinDivPayoutIsinGrowth">Isin Div Payout Isin Growth</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.isinDivPayoutIsinGrowth}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.status">Status</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.status}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.schemeName">Scheme Name</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.schemeName}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.netAssetValue">Net Asset Value</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.netAssetValue}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.repurchasePrice">Repurchase Price</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.repurchasePrice}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.salePrice">Sale Price</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.salePrice}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.date">Date</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.date}}</span>
+        </dd>
+        <dt><span data-translate="sampleApplicationApp.mutualFundNav.updatedDate">Updated Date</span></dt>
+        <dd>
+            <span>{{vm.mutualFundNav.updatedDate}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="mutual-fund-nav-detail.edit({id:vm.mutualFundNav.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
